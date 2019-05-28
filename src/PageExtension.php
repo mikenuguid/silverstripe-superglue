@@ -213,7 +213,7 @@ class PageExtension extends DataExtension
                 $displayFields = $connector->getGridFieldDisplayFields($this->owner);
 
                 /** @var GridFieldDataColumns $dataColumns */
-                $dataColumns = $pinnedGrid->getConfig()->getComponentByType("GridFieldDataColumns");
+                $dataColumns = $pinnedGrid->getConfig()->getComponentByType(GridFieldDataColumns::class);
 
                 $dataColumns->setDisplayFields($displayFields);
             }
@@ -237,7 +237,7 @@ class PageExtension extends DataExtension
                 $displayFields = $connector->getGridFieldDisplayFields($this->owner);
 
                 /** @var GridFieldDataColumns $dataColumns */
-                $dataColumns = $normalGrid->getConfig()->getComponentByType("GridFieldDataColumns");
+                $dataColumns = $normalGrid->getConfig()->getComponentByType(GridFieldDataColumns::class);
 
                 $dataColumns->setDisplayFields($displayFields);
             }
